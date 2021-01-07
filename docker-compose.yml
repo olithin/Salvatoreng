@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  vc-db:
+    image: mcr.microsoft.com/mssql/server:latest
+    ports:
+      - "${DOCKER_SQL_PORT:-1433}:1433"
+    expose:  
+      - 1433  
+    environment: 
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Express
+      - SA_PASSWORD=v!rto_Labs!

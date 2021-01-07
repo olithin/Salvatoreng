@@ -1,0 +1,35 @@
+﻿https://chillicream.com/blog/2020/07/16/version-11
+
+https://www.c-sharpcorner.com/article/getting-started-with-graphql-and-hotchocolate/
+https://www.jasongaylord.com/blog/2020/11/04/build-api-graphql-dotnet-core-part-2
+
+1) dotnet add package HotChocolate.AspNetCore --version 11.0.0-dev.1
+2) run server:  dotnet run --project Server
+3) by default graphql has the endpoint "graphql" - https://localhost:5001/graphql/
+4) https://www.blexin.com/en-US/Article/Blog/Creating-our-API-with-GraphQL-and-Hot-Chocolate-79
+
+
+note: APIs should be built design-first so that's what we are going to do.
+
+https://www.codementor.io/@marcell225/how-to-build-graphql-apis-with-asp-net-core-hotchocolate-part-1-setup-1958pk5ysp
+
+https://www.codemag.com/Article/2003051/Introduction-to-GraphQL-for-.NET-Developers-Mutation
+
+
+------------------------------------
+https://medium.com/@marcinjaniak/graphql-simple-authorization-and-authentication-with-hotchocolate-11-and-asp-net-core-3-162e0a35743d
+
+https://localhost:5001/playground/
+
+to get token add query and variables: 
+mutation getTokenMutation($email: String, $password:String) {
+  token(email: $email, password:$password)
+}
+
+variables: 
+{
+  "email":"hrleader@example.com",
+  "password":"nevermind, this backend doesn't care for password"
+}
+---------------------------
+
