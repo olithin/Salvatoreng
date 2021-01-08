@@ -5,6 +5,9 @@ import { ApolloProvider } from 'react-apollo';
 import { ApolloProvider as ApolloHooksProvider } from 'react-apollo-hooks';
 import './index.css';
 import App from './App';
+import { BrowserRouter as Router,Route, Switch} from 'react-router-dom';
+
+import Login from "./components/LoginForm/Login";
 
 const client = new ApolloClient({
   uri: 'https://spacexdata.herokuapp.com/graphql',
@@ -13,7 +16,12 @@ const client = new ApolloClient({
 ReactDOM.render(
   <ApolloProvider client={client}>
     <ApolloHooksProvider client={client}>
-      <App />
+      <Router>
+          <Switch>
+              <Route path="/dashboard" component={App} />
+              <Route path="/login" component={Login} />
+          </Switch>
+        </Router>
     </ApolloHooksProvider>
   </ApolloProvider>,
   document.getElementById('root'),

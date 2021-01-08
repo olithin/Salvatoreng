@@ -14,7 +14,10 @@
     "react-apollo": "^2.5.4",
     "react-apollo-hooks": "^0.4.5",
     "react-dom": "^16.8.6",
+    "react-figma-login": "^1.0.7",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "2.1.8",
+    "styled-components": "^5.2.1",
     "typescript": "3.4.3"
   },
   "scripts": {
@@ -38,6 +41,7 @@
     "@graphql-codegen/typescript": "1.1.0",
     "@graphql-codegen/typescript-operations": "1.1.0",
     "@graphql-codegen/typescript-react-apollo": "1.1.0",
+    "@types/react-router-dom": "^5.1.7",
     "dotenv-cli": "^2.0.0"
   }
 }
