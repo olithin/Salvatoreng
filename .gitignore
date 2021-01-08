@@ -3,3 +3,4 @@ Backend/.vs/Server/DesignTimeBuild/.dtbcache
 Backend/.vs/
 Backend/Server/bin/
 Backend/Server/obj/
+Backend/Server/client/.idea/

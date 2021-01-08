@@ -21,7 +21,8 @@ https://medium.com/@marcinjaniak/graphql-simple-authorization-and-authentication
 
 https://localhost:5001/playground/
 
-to get token add query and variables: 
+------------------------------
+a)mutation to get token add query and variables: 
 mutation getTokenMutation($email: String, $password:String) {
   token(email: $email, password:$password)
 }
@@ -32,4 +33,9 @@ variables:
   "password":"nevermind, this backend doesn't care for password"
 }
 ---------------------------
-
+query{
+  book{
+    author
+  }
+}
+-----------------------
